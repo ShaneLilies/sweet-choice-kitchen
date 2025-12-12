@@ -1,3 +1,17 @@
+// Import category images
+import cakesImg from '@/assets/desserts/cakes.jpg';
+import cookiesImg from '@/assets/desserts/cookies.jpg';
+import piesImg from '@/assets/desserts/pies.jpg';
+import iceCreamImg from '@/assets/desserts/ice-cream.jpg';
+import macaronsImg from '@/assets/desserts/macarons.jpg';
+import donutsImg from '@/assets/desserts/donuts.jpg';
+import pastriesImg from '@/assets/desserts/pastries.jpg';
+import puddingImg from '@/assets/desserts/pudding.jpg';
+import browniesImg from '@/assets/desserts/brownies.jpg';
+import italianImg from '@/assets/desserts/italian.jpg';
+import asianImg from '@/assets/desserts/asian.jpg';
+import frozenImg from '@/assets/desserts/frozen.jpg';
+
 export interface Recipe {
   name: string;
   description: string;
@@ -20,6 +34,7 @@ export interface DessertCategory {
   name: string;
   emoji: string;
   description: string;
+  image: string;
   types: DessertType[];
 }
 
@@ -29,6 +44,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Cakes",
     emoji: "🎂",
     description: "Soft, fluffy, and perfect for celebrations",
+    image: cakesImg,
     types: [
       {
         id: "chocolate-cake",
@@ -171,6 +187,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Cookies",
     emoji: "🍪",
     description: "Crispy, chewy, and utterly irresistible",
+    image: cookiesImg,
     types: [
       {
         id: "chocolate-chip",
@@ -307,6 +324,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Pies",
     emoji: "🥧",
     description: "Flaky crusts with delicious fillings",
+    image: piesImg,
     types: [
       {
         id: "apple-pie",
@@ -443,6 +461,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Ice Cream",
     emoji: "🍨",
     description: "Frozen creamy delights",
+    image: iceCreamImg,
     types: [
       {
         id: "vanilla-ice-cream",
@@ -570,6 +589,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Brownies",
     emoji: "🟫",
     description: "Fudgy squares of chocolate heaven",
+    image: browniesImg,
     types: [
       {
         id: "classic-brownie",
@@ -699,6 +719,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Cupcakes",
     emoji: "🧁",
     description: "Individual portions of cake perfection",
+    image: cakesImg,
     types: [
       {
         id: "vanilla-cupcake",
@@ -837,6 +858,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Donuts",
     emoji: "🍩",
     description: "Fried or baked rings of sweetness",
+    image: donutsImg,
     types: [
       {
         id: "glazed-donut",
@@ -964,6 +986,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Puddings",
     emoji: "🍮",
     description: "Creamy, smooth comfort desserts",
+    image: puddingImg,
     types: [
       {
         id: "chocolate-pudding",
@@ -1093,6 +1116,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Tarts",
     emoji: "🥮",
     description: "Elegant pastries with delicious fillings",
+    image: pastriesImg,
     types: [
       {
         id: "fruit-tart",
@@ -1221,6 +1245,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Mousse",
     emoji: "🫧",
     description: "Light and airy whipped desserts",
+    image: italianImg,
     types: [
       {
         id: "chocolate-mousse",
