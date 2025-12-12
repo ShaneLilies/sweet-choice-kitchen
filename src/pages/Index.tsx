@@ -4,6 +4,7 @@ import CategoryCard from "@/components/CategoryCard";
 import TypeCard from "@/components/TypeCard";
 import RecipeView from "@/components/RecipeView";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ChatBot from "@/components/ChatBot";
 
 type View = "categories" | "types" | "recipe";
 
@@ -130,6 +131,9 @@ const Index = () => {
           Made with 💖 for dessert lovers everywhere
         </p>
       </footer>
+
+      {/* AI ChatBot */}
+      <ChatBot />
     </div>
   );
 };
