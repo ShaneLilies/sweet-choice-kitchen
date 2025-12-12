@@ -12,6 +12,48 @@ import italianImg from '@/assets/desserts/italian.jpg';
 import asianImg from '@/assets/desserts/asian.jpg';
 import frozenImg from '@/assets/desserts/frozen.jpg';
 
+// Import type images
+import chocolateCakeImg from '@/assets/types/chocolate-cake.jpg';
+import ubeCakeImg from '@/assets/types/ube-cake.jpg';
+import redVelvetImg from '@/assets/types/red-velvet.jpg';
+import cheesecakeImg from '@/assets/types/cheesecake.jpg';
+import chocolateChipImg from '@/assets/types/chocolate-chip.jpg';
+import sugarCookiesImg from '@/assets/types/sugar-cookies.jpg';
+import oatmealRaisinImg from '@/assets/types/oatmeal-raisin.jpg';
+import snickerdoodleImg from '@/assets/types/snickerdoodle.jpg';
+import applePieImg from '@/assets/types/apple-pie.jpg';
+import pumpkinPieImg from '@/assets/types/pumpkin-pie.jpg';
+import pecanPieImg from '@/assets/types/pecan-pie.jpg';
+import lemonMeringueImg from '@/assets/types/lemon-meringue.jpg';
+import vanillaIceCreamImg from '@/assets/types/vanilla-ice-cream.jpg';
+import chocolateIceCreamImg from '@/assets/types/chocolate-ice-cream.jpg';
+import strawberryIceCreamImg from '@/assets/types/strawberry-ice-cream.jpg';
+import mintChipImg from '@/assets/types/mint-chip.jpg';
+import classicBrownieImg from '@/assets/types/classic-brownie.jpg';
+import walnutBrownieImg from '@/assets/types/walnut-brownie.jpg';
+import creamCheeseBrownieImg from '@/assets/types/cream-cheese-brownie.jpg';
+import blondeBrownieImg from '@/assets/types/blonde-brownie.jpg';
+import vanillaCupcakeImg from '@/assets/types/vanilla-cupcake.jpg';
+import redVelvetCupcakeImg from '@/assets/types/red-velvet-cupcake.jpg';
+import lemonCupcakeImg from '@/assets/types/lemon-cupcake.jpg';
+import chocolateCupcakeImg from '@/assets/types/chocolate-cupcake.jpg';
+import glazedDonutImg from '@/assets/types/glazed-donut.jpg';
+import chocolateDonutImg from '@/assets/types/chocolate-donut.jpg';
+import bostonCreamImg from '@/assets/types/boston-cream.jpg';
+import cinnamonSugarImg from '@/assets/types/cinnamon-sugar.jpg';
+import chocolatePuddingImg from '@/assets/types/chocolate-pudding.jpg';
+import vanillaPuddingImg from '@/assets/types/vanilla-pudding.jpg';
+import ricePuddingImg from '@/assets/types/rice-pudding.jpg';
+import breadPuddingImg from '@/assets/types/bread-pudding.jpg';
+import fruitTartImg from '@/assets/types/fruit-tart.jpg';
+import lemonTartImg from '@/assets/types/lemon-tart.jpg';
+import chocolateTartImg from '@/assets/types/chocolate-tart.jpg';
+import custardTartImg from '@/assets/types/custard-tart.jpg';
+import chocolateMousseImg from '@/assets/types/chocolate-mousse.jpg';
+import strawberryMousseImg from '@/assets/types/strawberry-mousse.jpg';
+import mangoMousseImg from '@/assets/types/mango-mousse.jpg';
+import coffeeMousseImg from '@/assets/types/coffee-mousse.jpg';
+
 export interface Recipe {
   name: string;
   description: string;
@@ -26,6 +68,7 @@ export interface DessertType {
   id: string;
   name: string;
   emoji: string;
+  image: string;
   recipe: Recipe;
 }
 
@@ -50,6 +93,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-cake",
         name: "Chocolate Cake",
         emoji: "🍫",
+        image: chocolateCakeImg,
         recipe: {
           name: "Classic Chocolate Cake",
           description: "Rich, moist, and decadently chocolatey",
@@ -84,6 +128,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "ube-cake",
         name: "Ube Cake",
         emoji: "💜",
+        image: ubeCakeImg,
         recipe: {
           name: "Filipino Ube Cake",
           description: "Purple yam cake with creamy ube flavor",
@@ -119,6 +164,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "red-velvet",
         name: "Red Velvet",
         emoji: "❤️",
+        image: redVelvetImg,
         recipe: {
           name: "Red Velvet Cake",
           description: "Stunning red cake with cream cheese frosting",
@@ -153,6 +199,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "cheesecake",
         name: "Cheesecake",
         emoji: "🧀",
+        image: cheesecakeImg,
         recipe: {
           name: "New York Cheesecake",
           description: "Creamy, dense, and absolutely divine",
@@ -193,6 +240,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-chip",
         name: "Chocolate Chip",
         emoji: "🍫",
+        image: chocolateChipImg,
         recipe: {
           name: "Classic Chocolate Chip Cookies",
           description: "Chewy centers with crispy edges",
@@ -225,6 +273,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "sugar-cookies",
         name: "Sugar Cookies",
         emoji: "⭐",
+        image: sugarCookiesImg,
         recipe: {
           name: "Soft Sugar Cookies",
           description: "Buttery, soft, and perfect for decorating",
@@ -256,6 +305,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "oatmeal-raisin",
         name: "Oatmeal Raisin",
         emoji: "🥣",
+        image: oatmealRaisinImg,
         recipe: {
           name: "Chewy Oatmeal Raisin Cookies",
           description: "Hearty oats with plump raisins",
@@ -289,6 +339,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "snickerdoodle",
         name: "Snickerdoodle",
         emoji: "🌀",
+        image: snickerdoodleImg,
         recipe: {
           name: "Classic Snickerdoodles",
           description: "Soft cookies coated in cinnamon sugar",
@@ -330,6 +381,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "apple-pie",
         name: "Apple Pie",
         emoji: "🍎",
+        image: applePieImg,
         recipe: {
           name: "Classic Apple Pie",
           description: "Warm spiced apples in buttery crust",
@@ -362,6 +414,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "pumpkin-pie",
         name: "Pumpkin Pie",
         emoji: "🎃",
+        image: pumpkinPieImg,
         recipe: {
           name: "Classic Pumpkin Pie",
           description: "Creamy spiced pumpkin custard",
@@ -394,6 +447,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "pecan-pie",
         name: "Pecan Pie",
         emoji: "🌰",
+        image: pecanPieImg,
         recipe: {
           name: "Southern Pecan Pie",
           description: "Gooey caramel filling with crunchy pecans",
@@ -425,6 +479,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "lemon-meringue",
         name: "Lemon Meringue",
         emoji: "🍋",
+        image: lemonMeringueImg,
         recipe: {
           name: "Lemon Meringue Pie",
           description: "Tangy lemon curd with fluffy meringue",
@@ -467,6 +522,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "vanilla-ice-cream",
         name: "Vanilla Bean",
         emoji: "🍦",
+        image: vanillaIceCreamImg,
         recipe: {
           name: "Homemade Vanilla Ice Cream",
           description: "Classic creamy vanilla with real vanilla beans",
@@ -496,6 +552,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-ice-cream",
         name: "Chocolate",
         emoji: "🍫",
+        image: chocolateIceCreamImg,
         recipe: {
           name: "Rich Chocolate Ice Cream",
           description: "Deeply chocolatey and velvety smooth",
@@ -526,6 +583,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "strawberry-ice-cream",
         name: "Strawberry",
         emoji: "🍓",
+        image: strawberryIceCreamImg,
         recipe: {
           name: "Fresh Strawberry Ice Cream",
           description: "Made with real strawberries",
@@ -556,6 +614,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "mint-chip",
         name: "Mint Chip",
         emoji: "🌿",
+        image: mintChipImg,
         recipe: {
           name: "Mint Chocolate Chip Ice Cream",
           description: "Refreshing mint with chocolate chips",
@@ -595,6 +654,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "classic-brownie",
         name: "Classic Fudge",
         emoji: "🍫",
+        image: classicBrownieImg,
         recipe: {
           name: "Fudgy Brownies",
           description: "Dense, rich, and incredibly fudgy",
@@ -626,6 +686,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "walnut-brownie",
         name: "Walnut",
         emoji: "🥜",
+        image: walnutBrownieImg,
         recipe: {
           name: "Walnut Brownies",
           description: "Fudgy brownies loaded with crunchy walnuts",
@@ -657,6 +718,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "cream-cheese-brownie",
         name: "Cream Cheese Swirl",
         emoji: "🧀",
+        image: creamCheeseBrownieImg,
         recipe: {
           name: "Cream Cheese Swirl Brownies",
           description: "Marbled with tangy cream cheese",
@@ -685,6 +747,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "blonde-brownie",
         name: "Blondie",
         emoji: "🌟",
+        image: blondeBrownieImg,
         recipe: {
           name: "Butterscotch Blondies",
           description: "Brown sugar base with butterscotch flavor",
@@ -725,6 +788,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "vanilla-cupcake",
         name: "Vanilla",
         emoji: "🍦",
+        image: vanillaCupcakeImg,
         recipe: {
           name: "Classic Vanilla Cupcakes",
           description: "Light, fluffy, and perfectly sweet",
@@ -756,6 +820,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "red-velvet-cupcake",
         name: "Red Velvet",
         emoji: "❤️",
+        image: redVelvetCupcakeImg,
         recipe: {
           name: "Red Velvet Cupcakes",
           description: "Stunning red with cream cheese frosting",
@@ -790,6 +855,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "lemon-cupcake",
         name: "Lemon",
         emoji: "🍋",
+        image: lemonCupcakeImg,
         recipe: {
           name: "Lemon Cupcakes",
           description: "Bright and zesty with lemon buttercream",
@@ -822,6 +888,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-cupcake",
         name: "Chocolate",
         emoji: "🍫",
+        image: chocolateCupcakeImg,
         recipe: {
           name: "Devil's Food Cupcakes",
           description: "Rich, moist, and deeply chocolatey",
@@ -864,6 +931,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "glazed-donut",
         name: "Classic Glazed",
         emoji: "✨",
+        image: glazedDonutImg,
         recipe: {
           name: "Classic Glazed Donuts",
           description: "Light and airy with sweet glaze",
@@ -896,6 +964,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-donut",
         name: "Chocolate Frosted",
         emoji: "🍫",
+        image: chocolateDonutImg,
         recipe: {
           name: "Chocolate Frosted Donuts",
           description: "Topped with rich chocolate glaze",
@@ -926,6 +995,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "boston-cream",
         name: "Boston Cream",
         emoji: "🥮",
+        image: bostonCreamImg,
         recipe: {
           name: "Boston Cream Donuts",
           description: "Filled with vanilla cream, topped with chocolate",
@@ -956,6 +1026,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "cinnamon-sugar",
         name: "Cinnamon Sugar",
         emoji: "🌀",
+        image: cinnamonSugarImg,
         recipe: {
           name: "Cinnamon Sugar Donuts",
           description: "Warm donuts coated in cinnamon sugar",
@@ -992,6 +1063,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-pudding",
         name: "Chocolate",
         emoji: "🍫",
+        image: chocolatePuddingImg,
         recipe: {
           name: "Creamy Chocolate Pudding",
           description: "Silky smooth chocolate perfection",
@@ -1022,6 +1094,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "vanilla-pudding",
         name: "Vanilla",
         emoji: "🍦",
+        image: vanillaPuddingImg,
         recipe: {
           name: "Classic Vanilla Pudding",
           description: "Rich and creamy vanilla custard",
@@ -1051,6 +1124,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "rice-pudding",
         name: "Rice",
         emoji: "🍚",
+        image: ricePuddingImg,
         recipe: {
           name: "Creamy Rice Pudding",
           description: "Warm and comforting with cinnamon",
@@ -1082,6 +1156,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "bread-pudding",
         name: "Bread",
         emoji: "🍞",
+        image: breadPuddingImg,
         recipe: {
           name: "Classic Bread Pudding",
           description: "Custardy bread with vanilla sauce",
@@ -1122,6 +1197,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "fruit-tart",
         name: "Fresh Fruit",
         emoji: "🍓",
+        image: fruitTartImg,
         recipe: {
           name: "Fresh Fruit Tart",
           description: "Buttery crust with pastry cream and fresh fruits",
@@ -1152,6 +1228,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "lemon-tart",
         name: "Lemon",
         emoji: "🍋",
+        image: lemonTartImg,
         recipe: {
           name: "French Lemon Tart",
           description: "Silky lemon curd in crisp pastry",
@@ -1182,6 +1259,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-tart",
         name: "Chocolate",
         emoji: "🍫",
+        image: chocolateTartImg,
         recipe: {
           name: "Dark Chocolate Tart",
           description: "Rich, decadent chocolate ganache",
@@ -1211,6 +1289,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "custard-tart",
         name: "Custard",
         emoji: "🥚",
+        image: custardTartImg,
         recipe: {
           name: "Portuguese Custard Tarts",
           description: "Creamy custard with caramelized top",
@@ -1251,6 +1330,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "chocolate-mousse",
         name: "Chocolate",
         emoji: "🍫",
+        image: chocolateMousseImg,
         recipe: {
           name: "French Chocolate Mousse",
           description: "Light, airy, and intensely chocolatey",
@@ -1280,6 +1360,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "strawberry-mousse",
         name: "Strawberry",
         emoji: "🍓",
+        image: strawberryMousseImg,
         recipe: {
           name: "Fresh Strawberry Mousse",
           description: "Light and fruity with real strawberries",
@@ -1309,6 +1390,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "mango-mousse",
         name: "Mango",
         emoji: "🥭",
+        image: mangoMousseImg,
         recipe: {
           name: "Tropical Mango Mousse",
           description: "Sweet and tropical with fresh mango",
@@ -1338,6 +1420,7 @@ export const dessertCategories: DessertCategory[] = [
         id: "coffee-mousse",
         name: "Coffee",
         emoji: "☕",
+        image: coffeeMousseImg,
         recipe: {
           name: "Espresso Mousse",
           description: "Rich coffee flavor in a light mousse",
