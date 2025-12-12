@@ -782,7 +782,7 @@ export const dessertCategories: DessertCategory[] = [
     name: "Cupcakes",
     emoji: "🧁",
     description: "Individual portions of cake perfection",
-    image: cakesImg,
+    image: chocolateCupcakeImg,
     types: [
       {
         id: "vanilla-cupcake",
